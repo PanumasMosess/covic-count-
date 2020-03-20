@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+}
+
+.flex {
+  min-height: 66vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dropdown {
+  margin: 1em;
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+
+.dropdown option {
+  word-wrap: break-word;
+}
+
+.box {
+  margin: 1em 0;
+  padding: 0.5em;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.box.confirmed {
+  border: 1px solid #ce9b61;
+  background: #f0ad81;
+}
+
+.box.recovered {
+  border: 1px solid #95c458;
+  background: #c0f081;
+}
+
+.box.deaths {
+  border: 1px solid #ce8c61;
+  background: #f08e81;
+}
+
+@media screen and (min-width: 900px) {
+  .flex {
+    flex-wrap: nowrap;
+  }
+
+  .box {
+    max-width: 300px;
+    line-height: 1.5;
+    font-size: 2em;
+  }
+}
